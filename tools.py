@@ -94,7 +94,7 @@ def sign_pdf(signature_data):
                 ),
                 timestamp_format="%Y-%m-%d %H:%M:%S %Z",
                 background=images.PdfImage(
-                    staticfiles_storage.path("img/CAMBIAR")
+                    staticfiles_storage.path("img/example.jpg")
                 ),
                 background_opacity=0.2
             ),
