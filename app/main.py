@@ -11,8 +11,8 @@ from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 from fastapi.requests import Request
 from fastapi.responses import FileResponse
 
-from . import settings
-from .tools import sign_pdf
+import settings
+from tools import sign_pdf
 from .dto import PDFPayload
 
 

@@ -16,7 +16,7 @@ RUN apt-get update && \
 WORKDIR /app
 COPY poetry.lock pyproject.toml ./
 COPY app app
-RUN poetry install --without dev --no-root && rm -rf $POETRY_CACHE_DIR
+RUN poetry install --no-root && rm -rf $POETRY_CACHE_DIR
 
 # Start distroless
 FROM al3xos/python-distroless:3.12-debian12 AS deploy
